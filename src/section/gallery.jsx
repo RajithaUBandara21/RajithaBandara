@@ -50,53 +50,50 @@ const Gallery= function() {
       var x = document.getElementsByTagName("BODY")[0];
       x.style.overflow = "auto";
     };
-    return(
-            <div className="container">
-            <GlobalStyles/>
-                <div className="row">
-                    <div className="col-md-12 text-center">
-                        <h2>Projects</h2>
-                        <div className="space-border"></div>
-                    </div>
-                </div>
-                 <Masonry
-                    className={"row my-gallery-class"} elementType={"div"}>
+    return (
+      <div className="container">
+        <GlobalStyles />
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h2>Projects</h2>
+            <div className="space-border"></div>
+          </div>
+        </div>
 
-                        {/* Doctor booking system */}
-                    <div className="col-lg-4 image-element-class de_modal de_modal" onClick={handleBtnClick}
-                        data-aos="fade-up"
-                        data-aos-once="true"
-                        >
-                        <div className="card-image-1">
-                            <div className="d-text">
-                                <h3>Doctor Booking System</h3>
-                                <h5 className="d-tag">Web Applicaion</h5>
-                            </div>
-                            <img src="./img/gallery/1.jpg" alt="gallery"/>
-                        </div>
-                    </div>
+        <Masonry className={"row my-gallery-class"} elementType={"div"}>
+          {/* Doctor booking system */}
+          <div
+            className="col-lg-4 image-element-class de_modal de_modal"
+            onClick={handleBtnClick}
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <div className="card-image-1">
+              <div className="d-text">
+                <h3>Doctor Booking System</h3>
+                <h5 className="d-tag">Web Applicaion</h5>
+              </div>
+              <img src="./img/gallery/1.jpg" alt="gallery" />
+            </div>
+          </div>
 
+          {/* Rover  */}
+          <div
+            className="col-lg-4 image-element-class de_modal"
+            onClick={handleBtnClick1}
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <div className="card-image-1">
+              <div className="d-text">
+                <h3>Rescue rover</h3>
+                <h5 className="d-tag">IOT based project</h5>
+              </div>
+              <img src="./img/gallery/2.png" alt="gallery" />
+            </div>
+          </div>
 
-
-
-{/* Rover  */}
-                    <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick1}
-                        data-aos="fade-up"
-                        data-aos-once="true"
-                        > 
-                        <div className="card-image-1">
-                            <div className="d-text">
-                                <h3>Rescue rover
-                                    </h3>
-                                <h5 className="d-tag">IOT based project</h5>
-                            </div>
-                            <img src="./img/gallery/2.png" alt="gallery"/>
-                        </div>
-                    </div>
-
-
-
-                    {/* <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick2}
+          {/* <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick2}
                         data-aos="fade-up"
                         data-aos-once="true"
                         >
@@ -144,161 +141,311 @@ const Gallery= function() {
                             <img src="./img/gallery/6.jpg" alt="gallery"/>
                         </div>
                     </div> */}
+        </Masonry>
 
-                    
-                  </Masonry>
+        {/* lightbox1 */}
+        {lighbx && (
+          <div className="LightboxGal">
+            <div className="closeGal">
+              <button
+                className="button-close"
+                onClick={handleBtnClickclose}
+              ></button>
+            </div>
+            <div className="v-center w-100">
+              <div className="mainLightbox container">
+                <div className="row g-5">
+                  <div className="col-lg-8">
+                    <img
+                      src="./img/gallery-big/1.jpg"
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
 
-                  {/* lightbox1 */}
-                  {lighbx && ( 
-                  <div className="LightboxGal">
-                    <div className="closeGal">
-                        <button className="button-close" onClick={handleBtnClickclose}></button>
-                    </div>
-                    <div className="v-center w-100">
-                      <div className="mainLightbox container">
-                        <div className="row g-5">
-                            <div className="col-lg-8">
-                                <img src="./img/gallery-big/1.jpg" alt="" className="img-fluid"/>
-                            </div>
-
-                            <div className="col-lg-4 de_project-info">
-                                <h3>Interior Design Website</h3>
-                                <p>Duis ad adipisicing id id in duis nisi qui veniam esse voluptate cillum pariatur cupidatat ut dolore amet aliquip cillum ad minim cillum nulla consectetur dolor culpa deserunt mollit dolor ea pariatur laboris sed tempor laboris quis commodo. Ut duis cupidatat consectetur cillum veniam eu quis minim irure fugiat ut consequat do veniam duis dolor quis cupidatat deserunt ut qui minim id dolor nisi sed non ut proident enim culpa dolor elit dolor aliquip dolore enim excepteur.</p>
-                               
-                                <div className="de_project-details">
-                                    <div className="d-field">
-                                        <i className="fa fa-user-o"></i>Client: <span>Envato</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-file-text-o"></i>Type: <span>Branding</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-calendar-o"></i>Year: <span>2020</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-external-link"></i>Preview: <span><a href="https://www.envato.com" target="_blank" rel="noreferrer">www.envato.com</a></span>
-                                    </div>
-                                </div>
-                                <div className="spacer-30"></div>
-                                <blockquote>
-                                    "Very well done theme. Versatile, extremely well coded, and gorgeous. That's a great combo. Highly recommended."
-                                    <span>John Archi</span>
-                                </blockquote>
-                            </div>
-                        </div>
+                  <div className="col-lg-4 de_project-info">
+                    <h3>Doctor Booking System</h3>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      Medicare-Booking is a web app for easy medical appointment
+                      booking and management. Key Features:
+                      <br />
+                      - Secure Login: Patients and doctors can register and log
+                      in.
+                      <br />
+                      - Doctor Profiles: View specialties, availability, and
+                      reviews.
+                      <br />
+                      - Appointment Booking: Patients can schedule appointments
+                      easily.
+                      <br />
+                      - Dashboards: Separate portals for doctors and patients.
+                      <br />
+                      - Reviews & Ratings: Patients can rate and review doctors.
+                      <br />
+                      - Responsive Design: Works smoothly on all devices.
+                      <br />
+                      - Search & Filter: Find doctors by specialty, location,
+                      etc.
+                      <br />
+                      - Notifications: Email alerts for confirmations and
+                      reminders.
+                      <br />
+                      <br />
+                      Tech Stack:
+                      <br />
+                      - Front-End: React.js, Tailwind CSS, Vite
+                      <br />
+                      - Back-End: Node.js, Express.js, MongoDB
+                      <br />
+                      - Authentication: JWT
+                      <br />
+                      <br />
+                      This app simplifies healthcare access for patients and
+                      helps doctors manage appointments efficiently.
+                    </p>
+                    {/* <div className="de_project-details">
+                      <div className="d-field">
+                        <i className="fa fa-user-o"></i>Client:{" "}
+                        <span>Envato</span>
                       </div>
+                      <div className="d-field">
+                        <i className="fa fa-file-text-o"></i>Type:{" "}
+                        <span>Branding</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-calendar-o"></i>Year:{" "}
+                        <span>2020</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-external-link"></i>Preview:{" "}
+                        <span>
+                          <a
+                            href="https://www.envato.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            www.envato.com
+                          </a>
+                        </span>
+                      </div>
+                    </div> */}
+                    <div className="spacer-30"></div>
+                    {/* <blockquote>
+                      "Very well done theme. Versatile, extremely well coded,
+                      and gorgeous. That's a great combo. Highly recommended."
+                      <span>John Archi</span>
+                    </blockquote> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* lightbox2 */}
+        {lighbx1 && (
+          <div className="LightboxGal">
+            <div className="closeGal">
+              <button
+                className="button-close"
+                onClick={handleBtnClickclose1}
+              ></button>
+            </div>
+            <div className="v-center w-100">
+              <div className="mainLightbox container">
+                <div className="row g-5">
+                  <div className="col-lg-8">
+                    <div className="row g-4">
+                      <div className="col-lg-12 item">
+                        <img
+                          src="./img/gallery-big/2.png"
+                          alt="galleryimage"
+                          className="img-fluid"
+                        />
+                      </div>
+                      {/* <div className="col-lg-6 item">
+                        <img
+                          src="./img/single-gallery/pf-2-2.jpg"
+                          alt="galleryimage"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="col-lg-6 item">
+                        <img
+                          src="./img/single-gallery/pf-2-3.jpg"
+                          alt="galleryimage"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="col-lg-12 item">
+                        <img
+                          src="./img/single-gallery/pf-2-4.jpg"
+                          alt="galleryimage"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="col-lg-6 item">
+                        <img
+                          src="./img/single-gallery/pf-2-5.jpg"
+                          alt="galleryimage"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="col-lg-6 item">
+                        <img
+                          src="./img/single-gallery/pf-2-6.jpg"
+                          alt="galleryimage"
+                          className="img-fluid"
+                        />
+                      </div> */}
                     </div>
                   </div>
-                  )}
 
-                  {/* lightbox2 */}
-                  {lighbx1 && ( 
-                  <div className="LightboxGal">
-                    <div className="closeGal">
-                        <button className="button-close" onClick={handleBtnClickclose1}></button>
+                  <div className="col-lg-4 de_project-info">
+                    <h3>SentinelResQ: Wireless Search and Rescue Rover</h3>
+                    <div>
+                      <p>
+                        <strong>SentinelResQ</strong> is a wireless search and
+                        rescue rover integrating <strong>ESP32</strong> and{" "}
+                        <strong>Atmega</strong> microcontrollers. It is
+                        engineered to detect victims and assess environmental
+                        hazards using a diverse sensor array.
+                      </p>
+                      <h3>Original Purpose</h3>
+                      <p>
+                        Initially designed for{" "}
+                        <strong>disaster response</strong>, the rover was
+                        developed to assist in search and rescue operations by
+                        providing real-time data on environmental conditions.
+                      </p>
+                      <h3>Performance and Applications</h3>
+                      <p>
+                        Experimental data indicate superior performance in{" "}
+                        <strong>controlled indoor environments</strong>,
+                        suggesting strong potential for:
+                      </p>
+                      <ul>
+                        <li>Gas leak detection</li>
+                        <li>Structural integrity assessments</li>
+                      </ul>
+                      <p>
+                        <em>This is a group project.</em>
+                      </p>
                     </div>
-                    <div className="v-center w-100">
-                      <div className="mainLightbox container">
-                        <div className="row g-5">
-                            <div className="col-lg-8">
-                                <div className="row g-4">
-                                    <div className="col-lg-12 item">
-                                        <img src="./img/single-gallery/pf-2-1.jpg" alt="galleryimage" className="img-fluid"/>
-                                    </div>
-                                    <div className="col-lg-6 item">
-                                        <img src="./img/single-gallery/pf-2-2.jpg" alt="galleryimage" className="img-fluid"/>
-                                    </div>
-                                    <div className="col-lg-6 item">
-                                        <img src="./img/single-gallery/pf-2-3.jpg" alt="galleryimage" className="img-fluid"/>
-                                    </div>
-                                    <div className="col-lg-12 item">
-                                        <img src="./img/single-gallery/pf-2-4.jpg" alt="galleryimage" className="img-fluid"/>
-                                    </div>
-                                    <div className="col-lg-6 item">
-                                        <img src="./img/single-gallery/pf-2-5.jpg" alt="galleryimage" className="img-fluid"/>
-                                    </div>
-                                    <div className="col-lg-6 item">
-                                        <img src="./img/single-gallery/pf-2-6.jpg" alt="galleryimage" className="img-fluid"/>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div className="col-lg-4 de_project-info">
-                                <h3>Interior Design Website</h3>
-                                <p>Duis ad adipisicing id id in duis nisi qui veniam esse voluptate cillum pariatur cupidatat ut dolore amet aliquip cillum ad minim cillum nulla consectetur dolor culpa deserunt mollit dolor ea pariatur laboris sed tempor laboris quis commodo. Ut duis cupidatat consectetur cillum veniam eu quis minim irure fugiat ut consequat do veniam duis dolor quis cupidatat deserunt ut qui minim id dolor nisi sed non ut proident enim culpa dolor elit dolor aliquip dolore enim excepteur.</p>
-                               
-                                <div className="de_project-details">
-                                    <div className="d-field">
-                                        <i className="fa fa-user-o"></i>Client: <span>Envato</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-file-text-o"></i>Type: <span>Branding</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-calendar-o"></i>Year: <span>2020</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-external-link"></i>Preview: <span><a href="https://www.envato.com" target="_blank" rel="noreferrer">www.envato.com</a></span>
-                                    </div>
-                                </div>
-                                <div className="spacer-30"></div>
-                                <blockquote>
-                                    "Very well done theme. Versatile, extremely well coded, and gorgeous. That's a great combo. Highly recommended."
-                                    <span>John Archi</span>
-                                </blockquote>
-                            </div>
-                        </div>
+                    {/* <div className="de_project-details">
+                      <div className="d-field">
+                        <i className="fa fa-user-o"></i>Client:{" "}
+                        <span>Envato</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-file-text-o"></i>Type:{" "}
+                        <span>Branding</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-calendar-o"></i>Year:{" "}
+                        <span>2020</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-external-link"></i>Preview:{" "}
+                        <span>
+                          <a
+                            href="https://www.envato.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            www.envato.com
+                          </a>
+                        </span>
+                      </div>
+                    </div> */}
+                    <div className="spacer-30"></div>
+                    {/* <blockquote>
+                      "Very well done theme. Versatile, extremely well coded,
+                      and gorgeous. That's a great combo. Highly recommended."
+                      <span>John Archi</span>
+                    </blockquote> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* lightboxvideo */}
+        {lighbx2 && (
+          <div className="LightboxGal">
+            <div className="closeGal">
+              <button
+                className="button-close"
+                onClick={handleBtnClickclose2}
+              ></button>
+            </div>
+            <div className="v-center w-100">
+              <div className="mainLightbox container">
+                <div className="row g-5">
+                  <div className="col-lg-8">
+                    <video className="pop" controls autoPlay loop>
+                      <source
+                        src="./video/local-video-2.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+
+                  <div className="col-lg-4 de_project-info">
+                    <h3>Self Hosted Video</h3>
+                    <p>
+                      Duis ad adipisicing id id in duis nisi qui veniam esse
+                      voluptate cillum pariatur cupidatat ut dolore amet aliquip
+                      cillum ad minim cillum nulla consectetur dolor culpa
+                      deserunt mollit dolor ea pariatur laboris sed tempor
+                      laboris quis commodo. Ut duis cupidatat consectetur cillum
+                      veniam eu quis minim irure fugiat ut consequat do veniam
+                      duis dolor quis cupidatat deserunt ut qui minim id dolor
+                      nisi sed non ut proident enim culpa dolor elit dolor
+                      aliquip dolore enim excepteur.
+                    </p>
+
+                    <div className="de_project-details">
+                      <div className="d-field">
+                        <i className="fa fa-user-o"></i>Client:{" "}
+                        <span>Envato</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-file-text-o"></i>Type:{" "}
+                        <span>Branding</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-calendar-o"></i>Year:{" "}
+                        <span>2020</span>
+                      </div>
+                      <div className="d-field">
+                        <i className="fa fa-external-link"></i>Preview:{" "}
+                        <span>
+                          <a
+                            href="https://www.envato.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            www.envato.com
+                          </a>
+                        </span>
                       </div>
                     </div>
+                    <div className="spacer-30"></div>
+                    <blockquote>
+                      "Very well done theme. Versatile, extremely well coded,
+                      and gorgeous. That's a great combo. Highly recommended."
+                      <span>John Archi</span>
+                    </blockquote>
                   </div>
-                  )}
-
-                {/* lightboxvideo */}
-                {lighbx2 && ( 
-                  <div className="LightboxGal">
-                    <div className="closeGal">
-                        <button className="button-close" onClick={handleBtnClickclose2}></button>
-                    </div>
-                    <div className="v-center w-100">
-                      <div className="mainLightbox container">
-                        <div className="row g-5">
-                            <div className="col-lg-8">
-                                <video className="pop" controls autoPlay loop>
-                                  <source src="./video/local-video-2.mp4" type="video/mp4"/>
-                                  Your browser does not support the video tag.
-                                </video>
-                            </div>
-
-                            <div className="col-lg-4 de_project-info">
-                                <h3>Self Hosted Video</h3>
-                                <p>Duis ad adipisicing id id in duis nisi qui veniam esse voluptate cillum pariatur cupidatat ut dolore amet aliquip cillum ad minim cillum nulla consectetur dolor culpa deserunt mollit dolor ea pariatur laboris sed tempor laboris quis commodo. Ut duis cupidatat consectetur cillum veniam eu quis minim irure fugiat ut consequat do veniam duis dolor quis cupidatat deserunt ut qui minim id dolor nisi sed non ut proident enim culpa dolor elit dolor aliquip dolore enim excepteur.</p>
-                               
-                                <div className="de_project-details">
-                                    <div className="d-field">
-                                        <i className="fa fa-user-o"></i>Client: <span>Envato</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-file-text-o"></i>Type: <span>Branding</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-calendar-o"></i>Year: <span>2020</span>
-                                    </div>
-                                    <div className="d-field">
-                                        <i className="fa fa-external-link"></i>Preview: <span><a href="https://www.envato.com" target="_blank" rel="noreferrer">www.envato.com</a></span>
-                                    </div>
-                                </div>
-                                <div className="spacer-30"></div>
-                                <blockquote>
-                                    "Very well done theme. Versatile, extremely well coded, and gorgeous. That's a great combo. Highly recommended."
-                                    <span>John Archi</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  )}
-
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
 }
