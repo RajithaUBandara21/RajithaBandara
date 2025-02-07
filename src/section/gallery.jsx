@@ -61,6 +61,8 @@ const Gallery= function() {
                 </div>
                  <Masonry
                     className={"row my-gallery-class"} elementType={"div"}>
+
+                        {/* Doctor booking system */}
                     <div className="col-lg-4 image-element-class de_modal de_modal" onClick={handleBtnClick}
                         data-aos="fade-up"
                         data-aos-once="true"
@@ -73,6 +75,11 @@ const Gallery= function() {
                             <img src="./img/gallery/1.jpg" alt="gallery"/>
                         </div>
                     </div>
+
+
+
+
+{/* Rover  */}
                     <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick1}
                         data-aos="fade-up"
                         data-aos-once="true"
@@ -86,7 +93,10 @@ const Gallery= function() {
                             <img src="./img/gallery/2.png" alt="gallery"/>
                         </div>
                     </div>
-                    <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick2}
+
+
+
+                    {/* <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick2}
                         data-aos="fade-up"
                         data-aos-once="true"
                         >
@@ -133,7 +143,9 @@ const Gallery= function() {
                             </div>
                             <img src="./img/gallery/6.jpg" alt="gallery"/>
                         </div>
-                    </div>
+                    </div> */}
+
+                    
                   </Masonry>
 
                   {/* lightbox1 */}

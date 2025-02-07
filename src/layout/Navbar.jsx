@@ -28,12 +28,7 @@ const Navbar = function () {
         <div className="container">
           <Link  className="navbar-brand" activeClass="active" spy to="hero-area">
             <img src="./img/logo-dark.png" className="img-fluid d-block imginit" alt="logo"/>
-            {/* <img src="./img/logo-3.png" className="img-fluid imgsaly" alt="logo"/> */}
-            {/* <img src="./img/logo-6.png" className="img-fluid imggrey" alt="logo"/> */}
-            {/* <img src="./img/logo-7.png" className="img-fluid imgchef" alt="logo"/> */}
-            {/* <img src="./img/logo-5.png" className="img-fluid imgdesigner" alt="logo"/> */}
-            {/* <img src="./img/logo-4.png" className="img-fluid imglawyer" alt="logo"/> */}
-            {/* <img src="./img/logo-2.png" className="img-fluid imgdark" alt="logo"/> */}
+            
           </Link>
           {/* Desktop menu Here */}
           <div className="dekstopmenu">

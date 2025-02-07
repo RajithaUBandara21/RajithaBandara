@@ -68,7 +68,9 @@ function home() {
         </section>
 
         {/* Gallery */}
-        <section id="gallery"><Gallery/></section>
+        <section id="gallery">
+          <Gallery />
+        </section>
 
         {/* Gallery */}
         <section id="blog" className="pb-0">
@@ -82,11 +84,47 @@ function home() {
         </section>
 
         <div className="float-text">
-          <div className="de_social-icons" >
-                            <a href="https://www.linkedin.com/in/rajithaubandara/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin" style={{color:"rgb(148, 148, 148)"}}></i></a>
-                            <a href="https://github.com/RajithaUBandara21" target="_blank" rel="noreferrer"><i className="fa fa-github" style={{color:"rgb(148, 148, 148)"}}></i></a>
-                            <a href="https://www.instagram.com/whos_rajitha/" target="_blank" rel="noreferrer"><i className="fa fa-instagram" style={{color:"rgb(148, 148, 148)"}}></i></a>
-          <a href="https://web.facebook.com/rajitha.bandara.7737" target="_blank" rel="noreferrer"><i className="fa fa-facebook " style={{color:"rgb(148, 148, 148)"}}></i></a>
+          <div className="de_social-icons">
+            <a
+              href="https://www.linkedin.com/in/rajithaubandara/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i
+                className="fa fa-linkedin"
+                style={{ color: "rgb(148, 148, 148)" }}
+              ></i>
+            </a>
+            <a
+              href="https://github.com/RajithaUBandara21"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i
+                className="fa fa-github"
+                style={{ color: "rgb(148, 148, 148)" }}
+              ></i>
+            </a>
+            <a
+              href="https://www.instagram.com/whos_rajitha/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i
+                className="fa fa-instagram"
+                style={{ color: "rgb(148, 148, 148)" }}
+              ></i>
+            </a>
+            <a
+              href="https://web.facebook.com/rajitha.bandara.7737"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i
+                className="fa fa-facebook "
+                style={{ color: "rgb(148, 148, 148)" }}
+              ></i>
+            </a>
           </div>
           <span>Contact Me</span>
         </div>
