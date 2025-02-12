@@ -93,57 +93,70 @@ const Gallery= function() {
             </div>
           </div>
 
-          {/* <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick2}
-                        data-aos="fade-up"
-                        data-aos-once="true"
-                        >
-                        <div className="card-image-1">
-                            <div className="d-text">
-                                <h3>Justica Lawyer</h3>
-                                <h5 className="d-tag">website</h5>
-                            </div>
-                            <img src="./img/gallery/3.jpg" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick}
-                        data-aos="fade-up"
-                        data-aos-once="true"
-                        >
-                        <div className="card-image-1">
-                            <div className="d-text">
-                                <h3>Bluetec App</h3>
-                                <h5 className="d-tag">website</h5>
-                            </div>
-                            <img src="./img/gallery/4.jpg" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick1}
-                        data-aos="fade-up"
-                        data-aos-once="true"
-                        >
-                        <div className="card-image-1">
-                            <div className="d-text">
-                                <h3>Uhost Hosting</h3>
-                                <h5 className="d-tag">website</h5>
-                            </div>
-                            <img src="./img/gallery/5.jpg" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 image-element-class de_modal" onClick={handleBtnClick2}
-                        data-aos="fade-up"
-                        data-aos-once="true"
-                        >
-                        <div className="card-image-1">
-                            <div className="d-text">
-                                <h3>Bolo Creative</h3>
-                                <h5 className="d-tag">website</h5>
-                            </div>
-                            <img src="./img/gallery/6.jpg" alt="gallery"/>
-                        </div>
-                    </div> */}
+          {/*  Laboratory Management System */}
+
+          <div
+            className="col-lg-4 image-element-class de_modal"
+            onClick={handleBtnClick2}
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <div className="card-image-1">
+              <div className="d-text">
+                <h3> Laboratory Management System</h3>
+                <h5 className="d-tag">website</h5>
+              </div>
+              <img src="./img/gallery/3.png" alt="gallery" />
+            </div>
+          </div>
+
+          {/* <div
+            className="col-lg-4 image-element-class de_modal"
+            onClick={handleBtnClick}
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <div className="card-image-1">
+              <div className="d-text">
+                <h3>Bluetec App</h3>
+                <h5 className="d-tag">website</h5>
+              </div>
+              <img src="./img/gallery/4.jpg" alt="gallery" />
+            </div>
+          </div> */}
+
+          {/* <div
+            className="col-lg-4 image-element-class de_modal"
+            onClick={handleBtnClick1}
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <div className="card-image-1">
+              <div className="d-text">
+                <h3>Uhost Hosting</h3>
+                <h5 className="d-tag">website</h5>
+              </div>
+              <img src="./img/gallery/5.jpg" alt="gallery" />
+            </div>
+          </div> */}
+
+          {/* <div
+            className="col-lg-4 image-element-class de_modal"
+            onClick={handleBtnClick2}
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <div className="card-image-1">
+              <div className="d-text">
+                <h3>Bolo Creative</h3>
+                <h5 className="d-tag">website</h5>
+              </div>
+              <img src="./img/gallery/6.jpg" alt="gallery" />
+            </div>
+          </div> */}
         </Masonry>
 
-        {/* lightbox1 */}
+        {/* Booking system*/}
         {lighbx && (
           <div className="LightboxGal">
             <div className="closeGal">
@@ -167,42 +180,61 @@ const Gallery= function() {
                     <h3>Doctor Booking System</h3>
                     <p className="text-gray-700 leading-relaxed mb-4">
                       Medicare-Booking is a web app for easy medical appointment
-                      booking and management. Key Features:
-                      <br />
-                      - Secure Login: Patients and doctors can register and log
-                      in.
-                      <br />
-                      - Doctor Profiles: View specialties, availability, and
-                      reviews.
-                      <br />
-                      - Appointment Booking: Patients can schedule appointments
-                      easily.
-                      <br />
-                      - Dashboards: Separate portals for doctors and patients.
-                      <br />
-                      - Reviews & Ratings: Patients can rate and review doctors.
-                      <br />
-                      - Responsive Design: Works smoothly on all devices.
-                      <br />
-                      - Search & Filter: Find doctors by specialty, location,
-                      etc.
-                      <br />
-                      - Notifications: Email alerts for confirmations and
-                      reminders.
+                      booking and management.
                       <br />
                       <br />
-                      Tech Stack:
+                      <strong>
+                        <h3>Tech Stack</h3>
+                      </strong>
+
+                      <ul />
+                      <li>Front-End: React.js, Tailwind CSS, Vite</li>
+                      <li>Back-End: Node.js, Express.js, MongoDB</li>
+                      <li>Authentication: JWT</li>
                       <br />
-                      - Front-End: React.js, Tailwind CSS, Vite
-                      <br />
-                      - Back-End: Node.js, Express.js, MongoDB
-                      <br />
-                      - Authentication: JWT
-                      <br />
+                      <strong> 
+                        <h3>
+                        Key Features:</h3>
+                      </strong>
+                  
+                      
+                      <ul>
+                        <li>
+                          Secure Login: Patients and doctors can register and
+                          login.
+                        </li>
+                        <li>
+                          Doctor Profiles: View specialties, availability, and
+                          reviews.
+                        </li>
+                        <li>
+                          Appointment Booking: Patients can schedule
+                          appointments easily.
+                        </li>
+                        <li>
+                          Dashboards: Separate portals for doctors and patients.
+                        </li>
+                        <li>
+                          Reviews & Ratings: Patients can rate and review
+                          doctors.
+                        </li>
+                        <li>
+                          Responsive Design: Works smoothly on all devices.
+                        </li>
+                        <li>
+                          Search & Filter: Find doctors by specialty,
+                          location,etc.
+                        </li>
+                        <li>
+                          Notifications: Email alerts for confirmations and
+                          reminders.
+                        </li>
+                      </ul>
                       <br />
                       This app simplifies healthcare access for patients and
                       helps doctors manage appointments efficiently.
                     </p>
+                    <br />
                     {/* <div className="de_project-details">
                       <div className="d-field">
                         <i className="fa fa-user-o"></i>Client:{" "}
@@ -242,7 +274,18 @@ const Gallery= function() {
           </div>
         )}
 
-        {/* lightbox2 */}
+
+
+
+
+
+
+
+
+
+
+
+        {/* Rover */}
         {lighbx1 && (
           <div className="LightboxGal">
             <div className="closeGal">
@@ -311,7 +354,7 @@ const Gallery= function() {
                         engineered to detect victims and assess environmental
                         hazards using a diverse sensor array.
                       </p>
-                      <h3>Original Purpose</h3>
+                      <h3>Purpose</h3>
                       <p>
                         Initially designed for{" "}
                         <strong>disaster response</strong>, the rover was
@@ -372,7 +415,20 @@ const Gallery= function() {
           </div>
         )}
 
-        {/* lightboxvideo */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* LIS */}
         {lighbx2 && (
           <div className="LightboxGal">
             <div className="closeGal">
@@ -385,30 +441,45 @@ const Gallery= function() {
               <div className="mainLightbox container">
                 <div className="row g-5">
                   <div className="col-lg-8">
-                    <video className="pop" controls autoPlay loop>
+                    <img src="./img/gallery/3.png" alt="gallery" />
+
+                    {/* <video className="pop" controls autoPlay loop>
                       <source
                         src="./video/local-video-2.mp4"
                         type="video/mp4"
                       />
                       Your browser does not support the video tag.
-                    </video>
+                    </video> */}
                   </div>
 
                   <div className="col-lg-4 de_project-info">
-                    <h3>Self Hosted Video</h3>
-                    <p>
-                      Duis ad adipisicing id id in duis nisi qui veniam esse
-                      voluptate cillum pariatur cupidatat ut dolore amet aliquip
-                      cillum ad minim cillum nulla consectetur dolor culpa
-                      deserunt mollit dolor ea pariatur laboris sed tempor
-                      laboris quis commodo. Ut duis cupidatat consectetur cillum
-                      veniam eu quis minim irure fugiat ut consequat do veniam
-                      duis dolor quis cupidatat deserunt ut qui minim id dolor
-                      nisi sed non ut proident enim culpa dolor elit dolor
-                      aliquip dolore enim excepteur.
-                    </p>
+                    <h3> Laboratory Management System </h3>
 
-                    <div className="de_project-details">
+                    <p>
+                      A comprehensive Health Laboratory Management System
+                      streamlining operations for lab operators, patients, and
+                      administrators.
+                    </p>
+                    <h3>Tech Stack</h3>
+<ul>
+  <li>Front-End: React, Material-UI, Axios</li>
+  <li>Back-End: Node.js, Express.js, MongoDB</li>
+  <li>Email Integration: Nodemailer</li>
+</ul>
+
+<h3>Key Features</h3>
+<ul>
+  <li>Email Notifications: Implemented dynamic email notifications using Nodemailer for timely updates on lab results and appointments.</li>
+  <li>Invoice Generation: Developed a detailed invoice system with display, printing, and email functionality.</li>
+  <li>User Interface Development: Built intuitive, responsive UI components to enhance user experience.</li>
+</ul>
+
+<p>
+This project significantly improved operational efficiency, enhancing communication and workflow within the laboratory.
+</p>
+
+
+                    {/* <div className="de_project-details">
                       <div className="d-field">
                         <i className="fa fa-user-o"></i>Client:{" "}
                         <span>Envato</span>
@@ -433,13 +504,13 @@ const Gallery= function() {
                           </a>
                         </span>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="spacer-30"></div>
-                    <blockquote>
+                    {/* <blockquote>
                       "Very well done theme. Versatile, extremely well coded,
                       and gorgeous. That's a great combo. Highly recommended."
                       <span>John Archi</span>
-                    </blockquote>
+                    </blockquote> */}
                   </div>
                 </div>
               </div>

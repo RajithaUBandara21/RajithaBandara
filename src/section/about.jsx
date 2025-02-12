@@ -154,7 +154,7 @@ const hero = () => {
             data-aos-easing="ease"
             data-aos-once="true"
           >
-            <img src="./img/css.png" alt="gallery" />
+         <img width="96" height="96" src="https://img.icons8.com/fluency/96/css3.png" alt="css3"/>
             <h4 className="mt-2">CSS</h4>
           </div>
         </div>
@@ -240,7 +240,7 @@ const hero = () => {
             data-aos-easing="ease"
             data-aos-once="true"
           >
-            <img src="./img/PS.png" alt="gallery" />
+            <img width="96" height="96" src="https://img.icons8.com/3d-fluency/94/adobe-photoshop.png" alt="adobe-photoshop"/>
             <h4 className="mt-2">PHOTOSHOP</h4>
           </div>
           {/* Lightroom */}
@@ -252,7 +252,7 @@ const hero = () => {
             data-aos-easing="ease"
             data-aos-once="true"
           >
-            <img src="./img/lr.png" alt="gallery" />
+           <img width="96" height="96" src="https://img.icons8.com/color/48/adobe-lightroom--v1.png" alt="adobe-lightroom--v1"/>
             <h4 className="mt-2">LIGHTROOM</h4>
           </div>
           

@@ -21,7 +21,7 @@ const hero = () => {
             <ul className="d_timeline">
               <li className="d_timeline-item" style={{}}>
                 <h3 className="d_timeline-title">
-                  Reading - Expected Graduation: 2026
+                  Expected Graduation: 2026
                 </h3>
                 <div
                   style={{
